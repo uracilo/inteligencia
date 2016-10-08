@@ -1,38 +1,88 @@
-console.log('test');
+onsole.log('test');
 
 /*
-//Variables de respuestas
+te responda
+2 una respuesta independiente cada una
+validar las palabras con las respuestas 
+si pone mierda entonces agarra respuestas
+primero encuentra las palabras y despues pone una respuesta
+debe ser continuo
+*/
 
-var respuesta_alegre = respuesta_alegre
-var respuesta_trsite = respuesta_trsite
+/*
+//=======Variables de respuesta=======//
+var r_alegre=["hola", "bien gracias", "gracias", "bien", "si, gracias",
+							"si","wii", "yeii", "genial", "increible",
+							"wow"]
 
-//Variables preguntas
+var r_triste=["me siento mal", "que mal", "que feo", "ayyy dolor", "no me digas eso",
+							"ayyy", "voy a llorar", "que lastima"]
 
-var p_negativa = p_negativa
-var p_positiva = p_positiva
+var r_amor=["yo también", "yo te quiero más", "te amo", "me gustas", "que dulce",
+					 "que tierno es lo que dices"]
+
+//======Variables de palabras=======//
+
+
+var p_positiva ["hola","estas", "bien", "mejor","gusta"]
+
+var p_negativa ["mal", "malo", "no", "peor", "lagrima",
+								"llorar", "llanto", "triste"]
+
+var p_amor ["corazon", "enamorado", "amor", "amo", "quiero",
+					 "adoro", "lindo", "linda", "beso","abrazo"]
+*/
+
+/*
+var inicio = prompt ("Hola!!! me llamo bot latam dime hola y platicamos :D")
+var hola = "hola"
+
+if (inicio == hola){
+	prompt("¿cómo te sientes hoy?")
+}
+*/
+
+/*
+//Ahora una respuesta aleatoria
+//Definir que tan aleatorio para 
+
+aleatoria=parseInt(Math.random()*21);
+console.log(aleatoria);
 
 */
-var inicio = prompt ("Hola!!! me llamo bot latam")
+//saluda
+//responde
+//libreria sentimientos
+//respuesta random
+//respeusta de distintas librerias
 
 
-pepe=juego_compu[numero_random];
- console.log("pepe:"+pepe)
 
-// situacion numero 1
-if (tomas_elseñor == pepe) {
+var tex="Dime algo y te contesto"
+var texto2=["hola", "gracias", "muchas gracias", "bien", "si, gracias",
+				"si","wii", "yeii", "genial", "increible",
+				"wow"]
 
- console.log("empate")
+function aleatorio(){
+	aleatoria=parseInt(Math.random()*11);
+console.log(texto2[aleatoria]);
 }
 
-// situacion numero 2 perdemos
 
-if ((tomas_elseñor == "piedra" && pepe == "papel") || (tomas_elseñor == "tijeras" && pepe == "piedra") || (tomas_elseñor == "papel" && pepe== "tijeras") ) {
- console.log("pepe te gano")
+pregunta(tex,texto2);
+function pregunta(tex,texto2){
+	respuesta = prompt(tex);
+	console.log(respuesta);
+	if (respuesta =="adios"){
+				} else {			
+ 				pregunta(aleatorio());
+
+ 		}	
 }
 
-// situacion numero 3 ganamos
 
 
-if ((tomas_elseñor == "papel" && pepe == "piedra") || (tomas_elseñor == "piedra" && pepe == "tijeras") || (tomas_elseñor == "tijeras" && pepe== "papel") ) {
- console.log("pepe perdio")
-}
+
+
+
+
